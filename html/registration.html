@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Autor" content="Ewerton Pereira" />
+  <link rel="stylesheet" href="../css/registration.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+  <title>Cadastro</title>
+</head>
+<body>
+   <!--start menu header-->
+  <header>
+    <div class="logo">
+      <a href="../behaviour.html"
+        ><img width="90" height="80" src="../img/brain_top.png" alt=""
+      /></a>
+    </div>
+    <div class="menu">
+      <div>
+        <a href="../html/personalities.html">PERSONALIDADES</a
+        >
+      </div>
+      <div>
+        <a href="html/registration.html">COMEÇAR TESTE</a
+        >
+      </div>
+    </div>
+  </header>
+  <!--end menu header-->
+  <!--start form-->
+  <section class="content">
+    <form onsubmit="return validate()">
+      <h1>Cadastro</h1>
+      <div>
+        <label for="username">Nome:</label><br>
+        <input type="text" id="username" size="42" minlength="3" required>
+      </div>
+      <div>
+        <label for="lastname">Sobrenome:</label><br>
+        <input type="text" id="lastname" size="42" minlength="3" required>
+      </div>
+      <div>
+      <div>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email"  size="42" required>
+      </div><br>
+      <div>
+        <label for="genre">Sexo:</label><br>
+        <div class="radios" >
+          <div><input type="radio" class="gender" id="male" name="gender" value="male"> Masculino</div>
+          <div><input type="radio" class="gender" id="female" name="gender" value="female"> Feminino</div>
+          <div><input type="radio" class="gender" id="other" name="gender" value="other"> Outro</div>
+        </div>
+      </div>
+      <div class="buttons">
+        <input type="submit">
+        <button type="reset">Limpar</button>
+      </div>
+    </form>
+  </section>
+  <!--end form-->
+  <script src="../js/registration.js"></script>
+</body>
+</html>
